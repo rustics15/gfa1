@@ -28,12 +28,12 @@ var consent = confirm("Do you agree to share your personal information with our 
 
 // Check user's response
 if (consent) {
-    alert("Name: " + nickname + "\n" +
+    console.log("Name: " + nickname + "\n" +
       "Height: " + feet + "’" + inches + "”\n" +
       "Weight: " + weightLbs.toFixed(3) + " lbs");
 } else {
     // User does not wish to share information
-    alert("User does not wish to share his/her information.");
+    console.log("User does not wish to share his/her information.");
 }
     </script>
 </body>
