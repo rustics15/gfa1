@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Define conversion factors
+var INCHES_TO_FEET = 12;
+var KG_TO_LBS = 2.20462;
+
+// Define variables
+var nickname = "yael";
+var heightInches = 67;
+var weightKg = 50;
+
+// Convert height from inches to feet and inches
+var feet = Math.floor(heightInches / INCHES_TO_FEET);
+var inches = heightInches % INCHES_TO_FEET;
+
+// Convert weight from kg to pounds
+var weightLbs = weightKg * KG_TO_LBS;
+
+// Display information
+alert("Name: " + nickname + "\n" +
+      "Height: " + feet + "’" + inches + "”\n" +
+      "Weight: " + weightLbs.toFixed(3) + " lbs");
+    </script>
+    
+</body>
+</html>

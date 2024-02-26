@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Define variables
+var nickname = "yael";
+var heightInches = 67;
+var weightKg = 50;
+
+// Define conversion factors
+var INCHES_TO_FEET = 12;
+var KG_TO_LBS = 2.20462;
+
+// Convert height from inches to feet and inches
+var feet = Math.floor(heightInches / INCHES_TO_FEET);
+var inches = heightInches % INCHES_TO_FEET;
+
+// Convert weight from kg to pounds
+var weightLbs = weightKg * KG_TO_LBS;
+
+// Ask user for consent
+var consent = confirm("Do you agree to share your personal information with our site?");
+
+// Check user's response
+if (consent) {
+    alert("Name: " + nickname + "\n" +
+      "Height: " + feet + "’" + inches + "”\n" +
+      "Weight: " + weightLbs.toFixed(3) + " lbs");
+} else {
+    // User does not wish to share information
+    alert("User does not wish to share his/her information.");
+}
+    </script>
+</body>
+</html>
